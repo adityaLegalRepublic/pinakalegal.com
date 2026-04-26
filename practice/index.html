@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Areas — Pinaka Legal, Delhi</title>
+  <meta name="description" content="Pinaka Legal handles criminal law, family law, property, consumer rights, workplace, tax, IP, cyber law and more. Expert advocates in Delhi. Free first consultation.">
+  <link rel="canonical" href="https://www.pinakalegal.com/practice">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#0d1520;--navy-mid:#111f35;--navy-light:#1a2d4a;
+      --white:#ffffff;--cream:#f9f6f0;--gold:#c9a84c;--gold-light:#e8c97a;
+      --text:#1a1c2a;--muted:#6b7280;--border:#e5e7eb;--red:#c8323c;
+      --c-family:#c85070;--c-criminal:#c8323c;--c-property:#8c5ac8;
+      --c-consumer:#41aa55;--c-workplace:#468cc8;--c-business:#5a73b9;
+      --c-tax:#d2a52d;--c-ip:#be4182;--c-cyber:#23afbe;--c-docs:#6b7280;
+      --radius:8px;--tr:.24s cubic-bezier(.4,0,.2,1);
+      --shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 20px 60px rgba(0,0,0,.14);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+
+    /* NAV */
+    .site-header{background:var(--navy);position:sticky;top:0;z-index:300;box-shadow:0 2px 20px rgba(0,0,0,.4)}
+    .top-bar{background:var(--red);text-align:center;padding:5px 1rem;font-size:.78rem;color:#fff;letter-spacing:.02em}
+    .top-bar a{color:#fff;font-weight:600}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+    .site-logo{display:flex;flex-direction:column;gap:2px;text-decoration:none}
+    .logo-main{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:#fff;letter-spacing:.06em;text-transform:uppercase}
+    .logo-sub{font-size:.63rem;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+    .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
+    .nav-links a{color:rgba(255,255,255,.72);font-size:.88rem;font-weight:500;transition:color var(--tr);position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width var(--tr)}
+    .nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+    .nav-links a.active{color:var(--gold);font-weight:600}
+    .nav-links a.active::after{width:100%}
+    .nav-cta{background:var(--gold);color:var(--navy)!important;padding:9px 20px;border-radius:4px;font-weight:600!important;transition:background var(--tr),transform var(--tr)!important}
+    .nav-cta:hover{background:var(--gold-light)!important;transform:translateY(-1px)}
+    .nav-cta::after{display:none!important}
+    @media(max-width:768px){.nav-links{gap:1.2rem}.nav-links a{font-size:.8rem}.logo-sub{display:none}.nav-cta{padding:7px 14px}}
+    @media(max-width:540px){.hide-mob{display:none}}
+
+    /* BREADCRUMB */
+    .bc-bar{background:var(--navy-mid);padding:10px 0}
+    .bc-in{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+    .bc{display:flex;align-items:center;gap:6px;font-size:.77rem;color:rgba(255,255,255,.45);flex-wrap:wrap}
+    .bc a{color:rgba(255,255,255,.6);transition:color var(--tr)}.bc a:hover{color:#fff}
+    .bc .sep{color:rgba(255,255,255,.25)}.bc .cur{color:var(--gold);font-weight:600}
+
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 60%,#1a2d4a 100%);padding:4rem 1.5rem 3rem;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:
+      linear-gradient(rgba(201,168,76,.03) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(201,168,76,.03) 1px,transparent 1px);
+      background-size:60px 60px}
+    .page-hero::after{content:'Justice';position:absolute;right:-2%;bottom:-20%;font-family:'Playfair Display',serif;font-size:14rem;font-weight:900;color:rgba(255,255,255,.02);line-height:1;pointer-events:none;user-select:none}
+    .hero-in{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+    .hero-ew{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+    .hero-ew::before{content:'';width:28px;height:2px;background:var(--gold)}
+    .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem}
+    .hero-sub{font-size:1rem;color:rgba(255,255,255,.55);max-width:540px;line-height:1.75;font-weight:300;margin-bottom:2rem}
+
+    /* QUICK NAV PILLS */
+    .area-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem}
+    .area-pill{padding:6px 14px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:.04em;border:1px solid;transition:all var(--tr);cursor:pointer;white-space:nowrap}
+    .area-pill:hover{transform:translateY(-1px)}
+
+    /* PRACTICE SECTION */
+    .practice-section{padding:5rem 1.5rem;scroll-margin-top:80px}
+    .practice-section:nth-child(even){background:var(--cream)}
+    .ps-inner{max-width:1200px;margin:0 auto}
+
+    /* Section header with accent */
+    .ps-header{display:grid;grid-template-columns:1fr auto;align-items:start;gap:2rem;margin-bottom:2.5rem}
+    @media(max-width:700px){.ps-header{grid-template-columns:1fr}}
+    .ps-accent-bar{width:4px;height:100%;border-radius:2px;min-height:80px}
+    .ps-header-left{display:flex;gap:1.4rem;align-items:flex-start}
+    .ps-icon{font-size:2.4rem;line-height:1;flex-shrink:0;margin-top:4px}
+    .ps-title{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:0.5rem}
+    .ps-desc{font-size:.95rem;color:var(--muted);line-height:1.7;font-weight:300;max-width:580px}
+    .ps-cta-wrap{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+    @media(max-width:700px){.ps-cta-wrap{flex-direction:row;align-items:flex-start}}
+
+    /* Service cards grid */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    @media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.services-grid{grid-template-columns:1fr}}
+
+    .service-card{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);padding:1.4rem;transition:transform var(--tr),box-shadow var(--tr),border-color var(--tr)}
+    .service-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+    .practice-section:nth-child(even) .service-card{background:var(--white)}
+    .sc-icon{font-size:1.4rem;margin-bottom:10px;line-height:1}
+    .sc-title{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+    .sc-text{font-size:.82rem;color:var(--muted);line-height:1.65;font-weight:300}
+
+    /* CTA inline button */
+    .pa-btn-primary{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:4px;font-weight:700;font-size:.85rem;letter-spacing:.02em;transition:all var(--tr);color:#fff;white-space:nowrap}
+    .pa-btn-primary:hover{transform:translateY(-1px);filter:brightness(1.1)}
+    .pa-btn-blog{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:4px;font-weight:500;font-size:.85rem;border:1px solid var(--border);color:var(--muted);transition:all var(--tr);white-space:nowrap}
+    .pa-btn-blog:hover{border-color:var(--muted);color:var(--text)}
+
+    /* FOOTER */
+    .site-footer{background:var(--navy);padding:3rem 1.5rem 1.5rem}
+    .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+    @media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}}
+    @media(max-width:540px){.footer-inner{grid-template-columns:1fr}}
+    .footer-brand-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:#fff;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .footer-brand-tag{font-size:.68rem;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:1rem}
+    .footer-brand-desc{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.7;font-weight:300;margin-bottom:1.2rem}
+    .footer-address{font-size:.78rem;color:rgba(255,255,255,.4);line-height:1.8;font-style:normal}
+    .footer-col h4{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem}
+    .footer-col ul{list-style:none}
+    .footer-col a{font-size:.82rem;color:rgba(255,255,255,.5);font-weight:300;line-height:2;transition:color var(--tr)}
+    .footer-col a:hover{color:#fff}
+    .footer-bottom{max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08);padding-top:1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+    .footer-disc{font-size:.72rem;color:rgba(255,255,255,.25);font-style:italic;max-width:600px;line-height:1.6}
+    .footer-copy{font-size:.75rem;color:rgba(255,255,255,.3)}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    .hero-in > *{animation:fadeUp .6s ease both}
+    .hero-in > *:nth-child(1){animation-delay:.1s}
+    .hero-in > *:nth-child(2){animation-delay:.18s}
+    .hero-in > *:nth-child(3){animation-delay:.26s}
+    .hero-in > *:nth-child(4){animation-delay:.34s}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="site-header">
+  <div class="top-bar">Free First Consultation · Call <a href="tel:+919953048998">+91 9953048998</a></div>
+  <div class="nav-inner">
+    <a href="/" class="site-logo">
+      <span class="logo-main">Pinaka Legal</span>
+      <span class="logo-sub">Advocates &amp; Solicitors · Delhi</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/practice" class="active">Practice Areas</a></li>
+      <li class="hide-mob"><a href="/about">About</a></li>
+      <li class="hide-mob"><a href="https://blog.pinakalegal.com" target="_blank" rel="noopener noreferrer">Legal Blog</a></li>
+      <li><a href="/contact" class="nav-cta">Book Consultation</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="bc-bar"><div class="bc-in">
+  <nav class="bc" aria-label="Breadcrumb">
+    <a href="/">Home</a><span class="sep">›</span>
+    <span class="cur">Practice Areas</span>
+  </nav>
+</div></div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-in">
+    <div class="hero-ew">Pinaka Legal · Delhi</div>
+    <h1 class="hero-h1">Our Practice Areas</h1>
+    <p class="hero-sub">We handle the full range of legal matters that affect ordinary people — from bail hearings to trademark registrations, maintenance to GST disputes. Every practice area, one firm.</p>
+    <div class="area-pills">
+      <a href="#family-law"       class="area-pill" style="color:var(--c-family);border-color:rgba(200,80,110,.35);background:rgba(200,80,110,.08)">👨‍👩‍👧 Family Law</a>
+      <a href="#criminal-law"     class="area-pill" style="color:var(--c-criminal);border-color:rgba(200,50,60,.35);background:rgba(200,50,60,.08)">⚖️ Criminal Law</a>
+      <a href="#property-law"     class="area-pill" style="color:var(--c-property);border-color:rgba(140,90,200,.35);background:rgba(140,90,200,.08)">🏠 Property Law</a>
+      <a href="#consumer-rights"  class="area-pill" style="color:var(--c-consumer);border-color:rgba(65,170,85,.35);background:rgba(65,170,85,.08)">🛒 Consumer Rights</a>
+      <a href="#workplace-employment" class="area-pill" style="color:var(--c-workplace);border-color:rgba(70,140,200,.35);background:rgba(70,140,200,.08)">💼 Workplace</a>
+      <a href="#business-contracts" class="area-pill" style="color:var(--c-business);border-color:rgba(90,115,185,.35);background:rgba(90,115,185,.08)">🤝 Business</a>
+      <a href="#tax-finance"      class="area-pill" style="color:var(--c-tax);border-color:rgba(210,165,45,.35);background:rgba(210,165,45,.08)">💹 Tax &amp; Finance</a>
+      <a href="#intellectual-property" class="area-pill" style="color:var(--c-ip);border-color:rgba(190,65,130,.35);background:rgba(190,65,130,.08)">💡 IP</a>
+      <a href="#cyber-law"        class="area-pill" style="color:var(--c-cyber);border-color:rgba(35,175,190,.35);background:rgba(35,175,190,.08)">🌐 Cyber Law</a>
+      <a href="#documents-formats" class="area-pill" style="color:var(--c-docs);border-color:rgba(107,114,128,.35);background:rgba(107,114,128,.08)">📄 Documents</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAMILY LAW ─────────────────────────────────────────────────────── -->
+<section class="practice-section" id="family-law">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-family)"></div>
+        <div>
+          <div class="ps-icon">👨‍👩‍👧</div>
+          <div class="ps-title">Family Law</div>
+          <p class="ps-desc">We handle the most personal legal battles — divorce, maintenance, custody, domestic violence and inheritance — with sensitivity and clarity. Our family law advocates represent both sides: those seeking relief and those defending against false claims.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=family-law" class="pa-btn-primary" style="background:var(--c-family)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/family-law/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">💔</div>
+        <div class="sc-title">Divorce &amp; Separation</div>
+        <p class="sc-text">Mutual consent and contested divorce, annulment, legal separation — all under Hindu Marriage Act and Special Marriage Act.</p>
+      </div>
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">💰</div>
+        <div class="sc-title">Maintenance &amp; Alimony</div>
+        <p class="sc-text">Filing and defending maintenance claims under Section 125 BNSS (formerly CrPC), interim maintenance and permanent alimony.</p>
+      </div>
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">👧</div>
+        <div class="sc-title">Child Custody &amp; Visitation</div>
+        <p class="sc-text">Interim and permanent custody, visitation rights, custody modification and international custody disputes.</p>
+      </div>
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">🛡️</div>
+        <div class="sc-title">498A &amp; DV Defence</div>
+        <p class="sc-text">Defending false 498A and Domestic Violence Act cases — anticipatory bail, quashing petitions, and protecting the entire family.</p>
+      </div>
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">🚨</div>
+        <div class="sc-title">Domestic Violence Relief</div>
+        <p class="sc-text">Protection orders, residence orders, monetary relief and criminal complaints under the DV Act 2005 for survivors.</p>
+      </div>
+      <div class="service-card" style="border-top:3px solid var(--c-family)">
+        <div class="sc-icon">🏠</div>
+        <div class="sc-title">Inheritance &amp; Succession</div>
+        <p class="sc-text">Will drafting, probate, intestate succession, partition of family property and disputes over ancestral assets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CRIMINAL LAW ───────────────────────────────────────────────────── -->
+<section class="practice-section" id="criminal-law" style="background:var(--cream)">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-criminal)"></div>
+        <div>
+          <div class="ps-icon">⚖️</div>
+          <div class="ps-title">Criminal Law</div>
+          <p class="ps-desc">When someone is arrested, charged or accused — minutes matter and the right lawyer matters more. Our criminal law team handles bail, trial defence, FIR quashing and appeal across all Delhi courts.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=criminal-law" class="pa-btn-primary" style="background:var(--c-criminal)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/criminal-law/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">📋</div><div class="sc-title">Bail — Anticipatory &amp; Regular</div><p class="sc-text">Anticipatory bail, regular bail, bail modification and cancellation across Magistrate, Sessions Court and High Court.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">📄</div><div class="sc-title">FIR Quashing</div><p class="sc-text">Quashing of false, malicious and illegal FIRs under Section 528 BNSS before the Delhi High Court.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">🛡️</div><div class="sc-title">Trial Defence</div><p class="sc-text">Full trial representation — from charge framing to arguments, cross-examination and final arguments.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">💳</div><div class="sc-title">Cheque Bounce</div><p class="sc-text">Filing and defending Section 138 NI Act cases — legal notice, Magistrate complaint, trial and appeal.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">⚠️</div><div class="sc-title">Cheating &amp; Fraud</div><p class="sc-text">Criminal complaints for cheating, breach of trust and fraud — and defence against false allegations under BNS.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-criminal)"><div class="sc-icon">📢</div><div class="sc-title">Defamation &amp; Cyber Crime</div><p class="sc-text">Criminal defamation complaints, online fraud cases and IT Act matters including cyberbullying and hacking.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROPERTY LAW ───────────────────────────────────────────────────── -->
+<section class="practice-section" id="property-law">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-property)"></div>
+        <div>
+          <div class="ps-icon">🏠</div>
+          <div class="ps-title">Property Law</div>
+          <p class="ps-desc">From RERA complaints against builders to landlord-tenant disputes and land title verification — we handle the full range of property and real estate matters for buyers, sellers, owners and tenants.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=property-law" class="pa-btn-primary" style="background:var(--c-property)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/property-law/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">🏗️</div><div class="sc-title">RERA &amp; Builder Disputes</div><p class="sc-text">RERA complaints for possession delay, refund with interest and defect liability against developers.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">🔑</div><div class="sc-title">Landlord &amp; Tenant Disputes</div><p class="sc-text">Eviction proceedings, deposit recovery, rent disputes and harassment — for both landlords and tenants.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">🗺️</div><div class="sc-title">Land &amp; Title Disputes</div><p class="sc-text">Encroachment, boundary disputes, revenue record correction and title verification before purchase.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">📋</div><div class="sc-title">Deeds &amp; Registrations</div><p class="sc-text">Drafting sale deeds, gift deeds, mortgage deeds, power of attorney and property registration.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">🏡</div><div class="sc-title">Inheritance &amp; Partition</div><p class="sc-text">Partition suits, legal heir certificates and disputes over ancestral or jointly-held property.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-property)"><div class="sc-icon">🏢</div><div class="sc-title">Society &amp; Redevelopment</div><p class="sc-text">Housing society disputes, redevelopment rights, NOC issues and flat owner protections under law.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONSUMER RIGHTS ───────────────────────────────────────────────── -->
+<section class="practice-section" id="consumer-rights" style="background:var(--cream)">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-consumer)"></div>
+        <div>
+          <div class="ps-icon">🛒</div>
+          <div class="ps-title">Consumer Rights</div>
+          <p class="ps-desc">Insurance claims rejected, bank fraud, medical negligence, online shopping fraud — we help consumers fight back through consumer forums, RERA and civil courts across India.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=consumer-rights" class="pa-btn-primary" style="background:var(--c-consumer)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/consumer-rights/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">📄</div><div class="sc-title">Insurance Disputes</div><p class="sc-text">Claim rejection, delayed settlement, mis-selling — consumer forum and civil court remedies against insurers.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">🏦</div><div class="sc-title">Banking &amp; Finance</div><p class="sc-text">Unauthorised transactions, loan disputes, credit card fraud and banking consumer rights under RBI guidelines.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">🏥</div><div class="sc-title">Medical Negligence</div><p class="sc-text">Hospital billing fraud, wrong diagnosis, surgical negligence — consumer forum and civil claims.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">📦</div><div class="sc-title">E-Commerce &amp; Online Fraud</div><p class="sc-text">Amazon/Flipkart refund denials, fake products, delivery fraud — eDaakhil filing and consumer complaints.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">🎓</div><div class="sc-title">Education Consumer Rights</div><p class="sc-text">Fee refund disputes, coaching fraud, university complaints and consumer rights in education services.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-consumer)"><div class="sc-icon">✈️</div><div class="sc-title">Travel &amp; Utilities</div><p class="sc-text">Airline compensation, hotel fraud, telecom complaints, electricity billing disputes and travel agent fraud.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WORKPLACE ──────────────────────────────────────────────────────── -->
+<section class="practice-section" id="workplace-employment">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-workplace)"></div>
+        <div>
+          <div class="ps-icon">💼</div>
+          <div class="ps-title">Workplace &amp; Employment</div>
+          <p class="ps-desc">Wrongful termination, salary not paid, workplace harassment, bond enforcement — we advise both employees and employers on their rights and obligations under Indian labour law.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=workplace-employment" class="pa-btn-primary" style="background:var(--c-workplace)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/workplace-employment/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-workplace)"><div class="sc-icon">🚪</div><div class="sc-title">Wrongful Termination</div><p class="sc-text">Retrenchment, forced resignation, illegal termination — labour court remedies and reinstatement claims.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-workplace)"><div class="sc-icon">💰</div><div class="sc-title">Salary &amp; Wage Recovery</div><p class="sc-text">Recovery of unpaid salary, PF, gratuity, notice pay and illegal deductions from former employers.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-workplace)"><div class="sc-icon">🛑</div><div class="sc-title">POSH &amp; Harassment</div><p class="sc-text">Sexual harassment complaints, ICC representation and defending employers against false POSH claims.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-workplace)"><div class="sc-icon">📋</div><div class="sc-title">Employment Contracts</div><p class="sc-text">Non-compete clauses, bond disputes, offer letter enforcement and employment contract review.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BUSINESS & CONTRACTS ───────────────────────────────────────────── -->
+<section class="practice-section" id="business-contracts" style="background:var(--cream)">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-business)"></div>
+        <div>
+          <div class="ps-icon">🤝</div>
+          <div class="ps-title">Business &amp; Contracts</div>
+          <p class="ps-desc">Contract disputes, arbitration, startup legal needs and business agreement drafting — we advise entrepreneurs and businesses at every stage from incorporation to dispute resolution.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=business-contracts" class="pa-btn-primary" style="background:var(--c-business)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/business-contracts/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-business)"><div class="sc-icon">⚖️</div><div class="sc-title">Arbitration</div><p class="sc-text">Filing arbitration, interim relief, award enforcement and defending arbitration proceedings under the Arbitration Act.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-business)"><div class="sc-icon">📋</div><div class="sc-title">Contract Drafting &amp; Disputes</div><p class="sc-text">MOU, NDA, service agreements, breach of contract suits and specific performance claims.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-business)"><div class="sc-icon">🚀</div><div class="sc-title">Startup &amp; Business Legal</div><p class="sc-text">Incorporation, co-founder agreements, investor term sheets, compliance and early-stage legal advisory.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TAX & FINANCE ──────────────────────────────────────────────────── -->
+<section class="practice-section" id="tax-finance">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-tax)"></div>
+        <div>
+          <div class="ps-icon">💹</div>
+          <div class="ps-title">Tax &amp; Finance</div>
+          <p class="ps-desc">IT notices, ED summons, GST demands, SARFAESI proceedings — tax and financial legal matters require urgent, expert response. We represent individuals and businesses at every level of tax authority.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=tax-finance" class="pa-btn-primary" style="background:var(--c-tax);color:var(--navy)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/tax-finance/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-tax)"><div class="sc-icon">📬</div><div class="sc-title">Income Tax Notices</div><p class="sc-text">Response to IT notices under Section 143(2), 148, 131 — drafting replies, appeal and ITAT representation.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-tax)"><div class="sc-icon">🔒</div><div class="sc-title">ED &amp; PMLA Defence</div><p class="sc-text">ED summons, PMLA attachment, money laundering notices — immediate legal response and representation.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-tax)"><div class="sc-icon">🧾</div><div class="sc-title">GST Disputes</div><p class="sc-text">Show cause notices, ITC disputes, demand orders and GST appellate proceedings.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-tax)"><div class="sc-icon">🏦</div><div class="sc-title">Loan Recovery Defence</div><p class="sc-text">SARFAESI notice response, DRT proceedings and protecting borrowers' rights against bank recovery action.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── IP ─────────────────────────────────────────────────────────────── -->
+<section class="practice-section" id="intellectual-property" style="background:var(--cream)">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-ip)"></div>
+        <div>
+          <div class="ps-icon">💡</div>
+          <div class="ps-title">Intellectual Property</div>
+          <p class="ps-desc">Trademark registration, copyright enforcement, patent filing and trade secret protection — we help creators, brands and businesses protect what they build and fight back when it is copied.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=intellectual-property" class="pa-btn-primary" style="background:var(--c-ip)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/intellectual-property/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-ip)"><div class="sc-icon">™️</div><div class="sc-title">Trademark Registration &amp; Defence</div><p class="sc-text">Trademark filing, opposition, infringement suits and passing off actions before Delhi High Court.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-ip)"><div class="sc-icon">©️</div><div class="sc-title">Copyright Protection</div><p class="sc-text">Copyright registration, takedown notices, infringement suits and creative work protection.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-ip)"><div class="sc-icon">🔬</div><div class="sc-title">Patent Filing &amp; Enforcement</div><p class="sc-text">Patent applications, prosecution, freedom-to-operate and infringement defence.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-ip)"><div class="sc-icon">🔐</div><div class="sc-title">Trade Secrets &amp; NDA</div><p class="sc-text">Trade secret protection, NDA drafting and enforcement against employees and competitors.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CYBER LAW ──────────────────────────────────────────────────────── -->
+<section class="practice-section" id="cyber-law">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-cyber)"></div>
+        <div>
+          <div class="ps-icon">🌐</div>
+          <div class="ps-title">Cyber Law</div>
+          <p class="ps-desc">Online fraud, UPI scams, sextortion, data breaches, digital arrest scams — cyber crimes move fast. Our team advises on immediate legal steps, complaint filing and recovery under the IT Act and DPDPA.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=cyber-law" class="pa-btn-primary" style="background:var(--c-cyber)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/cyber-law/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-cyber)"><div class="sc-icon">⚠️</div><div class="sc-title">Online Fraud &amp; Scam Recovery</div><p class="sc-text">UPI fraud, investment scams, digital arrest, part-time job scams — cybercrime complaint and recovery steps.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-cyber)"><div class="sc-icon">🔒</div><div class="sc-title">Data Privacy &amp; DPDPA</div><p class="sc-text">Data breach response, DPDPA 2023 compliance, privacy rights and complaints against data fiduciaries.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-cyber)"><div class="sc-icon">🚫</div><div class="sc-title">Online Harassment &amp; Defamation</div><p class="sc-text">Cyberbullying, social media defamation, morphed images and non-consensual intimate content — legal remedies.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOCUMENTS ──────────────────────────────────────────────────────── -->
+<section class="practice-section" id="documents-formats" style="background:var(--cream)">
+  <div class="ps-inner">
+    <div class="ps-header">
+      <div class="ps-header-left">
+        <div class="ps-accent-bar" style="background:var(--c-docs)"></div>
+        <div>
+          <div class="ps-icon">📄</div>
+          <div class="ps-title">Documents &amp; Legal Formats</div>
+          <p class="ps-desc">Every legal matter begins with a document — a notice, an affidavit, a deed, a petition. We draft, review and notarise all types of legal documents for individuals and businesses.</p>
+        </div>
+      </div>
+      <div class="ps-cta-wrap">
+        <a href="/contact?area=documents-formats" class="pa-btn-primary" style="background:var(--c-docs)">Book Consultation →</a>
+        <a href="https://blog.pinakalegal.com/documents-formats/" target="_blank" class="pa-btn-blog">Read Guides ↗</a>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="border-top:3px solid var(--c-docs)"><div class="sc-icon">📝</div><div class="sc-title">Affidavits</div><p class="sc-text">General, court, property, income and relationship affidavits — drafted and notarised for all purposes.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-docs)"><div class="sc-icon">📬</div><div class="sc-title">Legal Notices</div><p class="sc-text">Drafting and sending legal notices for property, employment, cheque bounce, defamation and contract disputes.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-docs)"><div class="sc-icon">📢</div><div class="sc-title">Complaints &amp; Petitions</div><p class="sc-text">Police complaints, consumer forum complaints, writ petitions and civil plaints — drafted for courts across Delhi.</p></div>
+      <div class="service-card" style="border-top:3px solid var(--c-docs)"><div class="sc-icon">💼</div><div class="sc-title">Business &amp; Employment Documents</div><p class="sc-text">Partnership deeds, MOU, NDA, offer letters, termination letters and employment contracts reviewed and drafted.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Book a Consultation</div>
+    <h2 class="cta-h2" style="font-family:'Playfair Display',serif">Not Sure Which Area Covers Your Problem?</h2>
+    <p class="cta-sub">Describe your situation in a free, confidential call. We will tell you honestly which area of law applies and what your options are — no obligation.</p>
+    <div class="cta-buttons">
+      <a href="/contact" class="btn-gold">Talk to a Lawyer →</a>
+      <a href="tel:+919953048998" class="btn-outline-white">Call +91 9953048998</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Pinaka Legal</div>
+      <div class="footer-brand-tag">Advocates &amp; Solicitors · Delhi</div>
+      <p class="footer-brand-desc">A Delhi-based law firm providing expert legal services to individuals, families and businesses across all areas of Indian law.</p>
+      <address class="footer-address">Grover Chamber, 4B, 1st Floor<br>Near Karol Bagh Metro, Block B<br>Rajinder Nagar, New Delhi 110060<br><a href="tel:+919953048998" style="color:var(--gold);margin-top:6px;display:block">+91 9953048998</a><a href="mailto:info@pinakalegal.com" style="color:rgba(255,255,255,.4)">info@pinakalegal.com</a></address>
+    </div>
+    <div class="footer-col"><h4>Practice Areas</h4><ul>
+      <li><a href="#family-law">Family Law</a></li><li><a href="#criminal-law">Criminal Law</a></li>
+      <li><a href="#property-law">Property Law</a></li><li><a href="#consumer-rights">Consumer Rights</a></li>
+      <li><a href="#workplace-employment">Workplace &amp; Employment</a></li>
+      <li><a href="#business-contracts">Business &amp; Contracts</a></li>
+      <li><a href="#tax-finance">Tax &amp; Finance</a></li>
+      <li><a href="#intellectual-property">Intellectual Property</a></li>
+      <li><a href="#cyber-law">Cyber Law</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>The Firm</h4><ul>
+      <li><a href="/">Home</a></li><li><a href="/about">About Us</a></li>
+      <li><a href="/about#team">Our Team</a></li><li><a href="/contact">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Legal Blog</h4><ul>
+      <li><a href="https://blog.pinakalegal.com" target="_blank">All Guides</a></li>
+      <li><a href="https://blog.pinakalegal.com/criminal-law/" target="_blank">Criminal Law</a></li>
+      <li><a href="https://blog.pinakalegal.com/family-law/" target="_blank">Family Law</a></li>
+      <li><a href="https://blog.pinakalegal.com/property-law/" target="_blank">Property Law</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-disc">Disclaimer: The information on this website does not constitute legal advice. Consult one of our advocates directly for advice specific to your situation.</p>
+    <p class="footer-copy">&copy; 2026 Pinaka Legal. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll offset for sticky nav
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=this.getAttribute('href').slice(1);
+    var el=document.getElementById(id);
+    if(el){
+      e.preventDefault();
+      var top=el.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top:top,behavior:'smooth'});
+    }
+  });
+});
+</script>
+</body>
+</html>

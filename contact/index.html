@@ -426,10 +426,13 @@
 // Form submit handler
 document.getElementById('contact-form').addEventListener('submit', function(e){
   e.preventDefault();
+  var endpoint = 'https://script.google.com/macros/s/AKfycbwhiS_0CBXAB06SAQIwkaQxyorcm2qmCwTLbVBjCi-vvAp5p_FXw5gdk7Bt7RGQp-XAXA/exec';
   var name    = document.getElementById('name').value.trim();
   var phone   = document.getElementById('phone').value.trim();
+  var email   = document.getElementById('email').value.trim();
   var area    = document.getElementById('area').value;
   var message = document.getElementById('message').value.trim();
+  var preferred = document.getElementById('preferred').value;
   var errEl   = document.getElementById('form-error');
   errEl.style.display = 'none';
 
@@ -444,11 +447,30 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   btn.disabled = true;
   btnText.textContent = 'Sending…';
 
-  // Simulate submission (replace with actual Wix form handler or Formspree)
-  setTimeout(function(){
+  var payload = {
+    name: name,
+    phone: phone,
+    email: email,
+    area: area,
+    message: message + (preferred ? '\n\nPreferred time to call: ' + preferred : ''),
+    pageUrl: window.location.href,
+    source: 'pinakalegal.com/contact'
+  };
+
+  fetch(endpoint, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function(){
     document.getElementById('form-container').style.display = 'none';
     document.getElementById('form-success').classList.add('show');
-  }, 1200);
+  }).catch(function(){
+    btn.disabled = false;
+    btnText.textContent = 'Send Message →';
+    errEl.textContent = 'Something went wrong. Please call us directly at +91 9953048998.';
+    errEl.style.display = 'block';
+  });
 });
 </script>
 </body>
